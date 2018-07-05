@@ -750,7 +750,7 @@
   TEAM SECTION
   =========================
 */
-.team {}
+.teams {}
 /*
   =========================
   end TEAM SECTION
@@ -764,9 +764,144 @@
   FOOTER
   =========================
 */
-.footer {}
+.footer {
+  min-height: 203px;
+  padding: 69px 30px 41px;
+  background-color: #1b3a8a;
+}
+.footer__row {
+  display: flex;
+}
+.footer__row-left,
+.footer__row-right {
+  width: 50%;
+}
+.footer__row-left {}
+.footer__row-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__line {
+  width: 100%;
+  max-width: 403px;
+  height: 1px;
+  margin: 0 0 25px 0;
+  padding: 0;
+  border: none;
+  background-color: rgba(255,255,255,0.2);
+}
+.footer__row {}
 /*
   =========================
   end FOOTER
+  =========================
+*/
+
+
+
+/*
+  =========================
+  LOGOTYPE
+  =========================
+*/
+.logotype {
+  margin-bottom: 30px;
+}
+/*
+  =========================
+  end LOGOTYPE
+  =========================
+*/
+/*
+  =========================
+  COPYRIGHT
+  =========================
+*/
+.copyright {
+  font-size: 12px;
+}
+/*
+  =========================
+  end COPYRIGHT
+  =========================
+*/
+/*
+  =========================
+  MENU
+  =========================
+*/
+.menu {
+  margin-bottom: 40px;
+}
+.menu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li:first-child a {
+  padding-left: 0;
+}
+.menu ul li:last-child a {
+  padding-right: 0;
+}
+.menu ul li a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "robotoblack", sans-serif;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.menu ul li a:hover {
+  opacity: 0.5;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.menu {}
+/*
+  =========================
+  end MENU
+  =========================
+*/
+/*
+  =========================
+  SOCIAL
+  =========================
+*/
+.social {}
+.social ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.social ul li {
+  list-style: none;
+}
+.social ul li a {
+  overflow: hidden;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+.social ul li a:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.social ul li a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*
+  =========================
+  end SOCIAL
   =========================
 */

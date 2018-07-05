@@ -416,7 +416,7 @@ footer span {
 
 /* Bk Start */
 body {
-  background: #000;
+  /*background: #000;*/
 }
 .head_section,
 .custom-navbar {
@@ -804,12 +804,6 @@ u.underline i
   float: left;
 }
 
-
-
-#footer {
-  background-color: #15141d;
-  padding: 50px 0 28px;
-}
 
 .foot_row {
   width: 100%;
