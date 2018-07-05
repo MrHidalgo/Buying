@@ -8,6 +8,11 @@
   padding-top: 159px;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 767px) {
+  .scheme {
+    display: none;
+  }
+}
 .scheme__row--0 {
   display: flex;
   align-items: flex-start;
@@ -769,18 +774,39 @@
   padding: 69px 30px 41px;
   background-color: #1b3a8a;
 }
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 34px 15px 20px;
+  }
+}
 .footer__row {
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .footer__row {
+    flex-wrap: wrap;
+  }
 }
 .footer__row-left,
 .footer__row-right {
   width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .footer__row-left,
+  .footer__row-right {
+    width: 100%;
+  }
 }
 .footer__row-left {}
 .footer__row-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .footer__row-right {
+    align-items: center;
+  }
 }
 .footer__line {
   width: 100%;
@@ -791,7 +817,11 @@
   border: none;
   background-color: rgba(255,255,255,0.2);
 }
-.footer__row {}
+@media screen and (max-width: 575px) {
+  .footer__line {
+    max-width: 100%;
+  }
+}
 /*
   =========================
   end FOOTER
@@ -808,6 +838,11 @@
 .logotype {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 767px) {
+  .logotype {
+    text-align: center;
+  }
+}
 /*
   =========================
   end LOGOTYPE
@@ -819,7 +854,21 @@
   =========================
 */
 .copyright {
+  color: #fff;
   font-size: 12px;
+}
+@media screen and (max-width: 767px) {
+  .copyright {
+    display: none;
+  }
+}
+.copyright--mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .copyright--mobile {
+    display: block;
+  }
 }
 /*
   =========================
@@ -839,8 +888,18 @@
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 575px) {
+  .menu ul {
+    flex-wrap: wrap;
+  }
+}
 .menu ul li {
   list-style: none;
+}
+@media screen and (max-width: 575px) {
+  .menu ul li {
+    width: 100%;
+  }
 }
 .menu ul li:first-child a {
   padding-left: 0;
@@ -855,6 +914,14 @@
   font-size: 15px;
   font-family: "robotoblack", sans-serif;
   transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+@media screen and (max-width: 575px) {
+  .menu ul li a  {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
 }
 .menu ul li a:hover {
   opacity: 0.5;
@@ -873,7 +940,11 @@
   SOCIAL
   =========================
 */
-.social {}
+@media screen and (max-width: 767px) {
+  .social {
+    margin-bottom: 20px;
+  }
+}
 .social ul {
   display: flex;
   align-items: center;
