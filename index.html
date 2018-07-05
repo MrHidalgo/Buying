@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="http://ianlunn.github.io/Hover/css/hover.css">
   <!-- technology -->
   <link rel="stylesheet" href="css/styles_frontend.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/main.css">
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -44,91 +45,121 @@
 
   <section class="navbar custom-navbar" role="navigation">
 
-        <div class="navbar-header">
-          <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-          </button>
-          <a href="index.html" class="navbar-brand"><img src="images/logo.png"/></a>
-        </div>
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand"><img src="images/logo.png"/></a>
+    </div>
 
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
 
-            <li>
-              <a href="#" class="smoothScroll" dropdown-js>About</a>
-            </li>
+        <li>
+          <a href="test.html" class="smoothScroll">About</a>
+        </li>
 
-            <li>
-              <a href="#" class="smoothScroll" dropdown-js>Partners</a>
-            </li>
-            <li>
-              <a href="#" class="smoothScroll" dropdown-js>Invest </a>
-            </li>
-            <li>
-              <a href="#" class="smoothScroll" dropdown-js>Team</a>
-            </li>
-            <li>
-              <a href="#" class="smoothScroll" dropdown-js>Roadmap</a>
-            </li>
-          </ul>
+        <li>
+          <a href="#" class="smoothScroll">Partners</a>
+        </li>
+        <li>
+          <a href="#" class="smoothScroll">Invest </a>
+        </li>
+        <li>
+          <a href="#" class="smoothScroll">Team</a>
+        </li>
+        <li>
+          <a href="#" class="smoothScroll">Roadmap</a>
+        </li>
+      </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#" class="btn_trans" dropdown-js>whitepaper</a>
-            </li>
-            <li>
-              <a href="#" class="btn_trans btn_filled" dropdown-js>become an investor</a>
-            </li>
-            <li>
-              <select class="btn_lang"><option>EN </option></select>
-            </li>
-          </ul>
-        </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#" class="btn_trans">whitepaper</a>
+        </li>
+        <li>
+          <a href="#" class="btn_trans btn_filled">become an investor</a>
+        </li>
+        <li>
+          <select class="btn_lang">
+            <option>EN</option>
+          </select>
+        </li>
+      </ul>
+    </div>
 
 
   </section>
 
   <section id="home" class="">
-    <!--<div class="video_block">
-      <video autoplay muted loop id="headervideo">
-        <source src="videos/netobjex_sparkle.mp4" type="video/mp4">
-        <source src="videos/netobjex_sparkle.ogg" type="video/ogg">
-        <source src="videos/netobjex_sparkle.webm" type="video/webm">
-      </video>
-    </div>-->
+
     <div class="inner">
+      <div class="home-des">
+        <div class="outer">
+          <h1><i class="times">For the first time in history</i>
+            each <u class="underline"><i>individual</i></u> will have <br>
+            the buying <u class="underline"><i>power of millions</i></u> <br>
+            in the palm of their hands!
+          </h1>
+          <div class="presale">
+            <i class="tp_left"></i><i class="tp_right"></i><i class="btm_left"></i><i class="btm_right"></i>
+            <h6>PRE-sale coming 1 september 2018</h6>
+            <p><span>Don’t miss out! Sign up for news and announcements.</span></p>
+            <div id="clockdiv" class="">
+              <div>
+                <span class="days"></span>
+                <div class="clocktext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="clocktext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="clocktext">Minutes</div>
+              </div>
+              <!--<div>
+                <span class="seconds"></span>
+                <div class="clocktext">Seconds</div>
+              </div>-->
+            </div>
+          </div>
+
+        </div>
+        <a href="#" class="base_btn learn_btn wow bounceInLeft" data-wow-delay="1.6s">learn more</a>
+      </div>
       <div class="square_box">
         <i class="tp_left"></i><i class="tp_right"></i><i class="btm_left"></i><i class="btm_right"></i>
       </div>
-      <video muted loop id="banner_vid">
+      <video autoplay muted loop id="banner_vid">
         <source src="videos/netobjex_sparkle.mp4" type="video/mp4">
         <source src="videos/netobjex_sparkle.ogg" type="video/ogg">
         <source src="videos/netobjex_sparkle.webm" type="video/webm">
       </video>
-        <!--<div class="home-des">
-          <div class="outer">
-            <h1>NetObjex is an Operating Platform <br> <span>for Digital Assets Utilizing</span> <br> <span class="yellow_text">Artificial intelligence, Blockchain & IoT.</span></h1>
-            <p>We provide enterprises and technology companies with the most comprehensive IoT platform in the world and partner with our clients to develop industry leading solutions.</p>
-          </div>
+      <div class="square_box email_outerbox">
+        <i class="tp_left"></i><i class="tp_right"></i><i class="btm_left"></i><i class="btm_right"></i>
+      </div>
+      <div class="email_inner">
+        <div class="banner_email"><input type="" name="" class="banner_email_field" placeholder="Email address"><a href="#" class="email_arrow"></a></div>
+        <ul class="social-icon">
+          <li><a href="#"><img src="images/m_fb.png"></a></li>
+          <li><a href="#"><img src="images/m_twit.png"></a></li>
+          <li><a href="#"><img src="images/m_in.png"></a></li>
+          <li><a href="#"><img src="images/m_gplus.png"></a></li>
+          <li><a href="#"><img src="images/m_baby.png"></a></li>
+          <li><a href="#"><img src="images/m_tube.png"></a></li>
+          <li><a href="#"><img src="images/m_mail.png"></a></li>
+        </ul>
+      </div>
 
-          <div class="full">
-            <div class="banner_numberbox"><span class="num" id="oem_numbers">7</span><span class="detail">OEM <br><sub>licenses</sub></span></div>
-            <div class="banner_numberbox"><span class="num" id="user_numbers"><small>m</small></span><span class="detail">user <br><sub>base</sub></span></div>
-            <div class="banner_numberbox last"><span class="num" id="sector_numbers">5</span><span class="detail">sectors <br><sub>use our technology</sub></span></div>
-          </div>
 
-          <a href="#requestdemo" class="base_btn demo_btn wow bounceInLeft smoothScroll" data-wow-delay="1.6s">REQUEST A DEMO</a>
-          <a href="javascript:void(0)" class="base_btn learn_btn wow bounceInLeft" data-wow-delay="1.6s">learn more</a>
-        </div>-->
-
-    
     </div>
+
   </section>
 
-  
-
+  <!-- SCHEME -->
   <section id="scheme" class="scheme">
     <div class="container-fluid inner">
       <div class="row">
@@ -139,7 +170,7 @@
             <span>E-commerce</span>
             Reinvented
           </h1>
-          <p class="scheme__text">Buying.com is the first e-commerce platform that allows online stores and consumers to buy direct from manufacturers.  It’s the next generation Decentralized E-Commerce Platform that harnesses the power of distributed ledger technology along with innovations in Bulk Pricing, Real-time Logistics, E-Commerce and Cryptocurrency.</p>
+          <p class="scheme__text">Buying.com is the first e-commerce platform that allows online stores and consumers to buy direct from manufacturers. It’s the next generation Decentralized E-Commerce Platform that harnesses the power of distributed ledger technology along with innovations in Bulk Pricing, Real-time Logistics, E-Commerce and Cryptocurrency.</p>
 
         </div>
 
@@ -179,7 +210,7 @@
             <div class="block-line block-line--1">
 
               <div class="block-col block-col--0">
-                <p class="block-text">DropShipper.com,  a Buying.com service with hundred of suppliers and millions of products.</p>
+                <p class="block-text">DropShipper.com, a Buying.com service with hundred of suppliers and millions of products.</p>
                 <div class="block-arrow">
                   <img src="./images/img-arrow-bottom.png" srcset="./images/img-arrow-bottom@2x.png 2x" alt="" title="" class="">
                 </div>
@@ -187,7 +218,7 @@
 
               <div class="block-col block-col--1">
                 <div class="block-text">
-                  Businesses and Consumers pool their orders together  to hit the Minimum Order Quantity of Manufacturers Using
+                  Businesses and Consumers pool their orders together to hit the Minimum Order Quantity of Manufacturers Using
                   <span>Direct to Consumer App using ReferLocal technology</span>
                   <img src="./images/img-sticker-0.png" srcset="./images/img-sticker-0@2x.png 2x" alt="" title="" class="">
                 </div>
@@ -277,12 +308,12 @@
 
               <div class="block-col block-col--2">
                 <img src="./images/img-sticker-5.png" srcset="./images/img-sticker-5@2x.png 2x" alt="" title="" class="">
-                <div class="block-text">Any vehicle owner can be a delivery operator by staking tokens. Only goods up to the value of staked tokens delivered by these operators.  Vehicle operators earn tokens when they deliver an order and earn a portion of the shipping fees paid by the consumers​.</div>
+                <div class="block-text">Any vehicle owner can be a delivery operator by staking tokens. Only goods up to the value of staked tokens delivered by these operators. Vehicle operators earn tokens when they deliver an order and earn a portion of the shipping fees paid by the consumers​.</div>
               </div>
 
               <div class="block-col block-col--3">
                 <img src="./images/img-sticker-5.png" srcset="./images/img-sticker-5@2x.png 2x" alt="" title="" class="">
-                <div class="block-text">Any storage can now be a hyperlocal distribution center by staking tokens.  Only goods up to the value of staked tokens distributed to these centers.  Storage owners earn tokens with a percentage of the tokens set aside for shipping fees paid by the consumers​.</div>
+                <div class="block-text">Any storage can now be a hyperlocal distribution center by staking tokens. Only goods up to the value of staked tokens distributed to these centers. Storage owners earn tokens with a percentage of the tokens set aside for shipping fees paid by the consumers​.</div>
               </div>
 
             </div>
@@ -294,8 +325,75 @@
       </div>
     </div>
   </section>
+  <!-- end SCHEME -->
 
-  
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <a href="#"><img src="images/logo.png"></a>
+
+          <ul class="social_links">
+            <li><a href="#" target="_blank" class="sm_fb"></a></li>
+            <li><a href="#" target="_blank" class="sm_tweet"></a></li>
+            <li><a href="#" target="_blank" class="sm_gplus"></a></li>
+            <li><a href="#" target="_blank" class="sm_lin"></a></li>
+            <li><a href="#" target="_blank" class="sm_tube"></a></li>
+            <li><a href="#" target="_blank" class="sm_med"></a></li>
+            <li><a href="#" target="_blank" class="sm_slack"></a></li>
+            <li><a href="#" target="_blank" class="sm_kyte"></a></li>
+          </ul>
+          <p class="foot_detail msg">sales@netobjex.com</p>
+          <p class="foot_detail phone">(855) 928-2283</p>
+          <p class="foot_detail chat">Let's chat ...pick a slot on our calendar at: <a href="#"> calendly.com/netobjex</a></p>
+        </div>
+        <div class="col-md-8 col-sm-8">
+          <div class="col-md-3 col-sm-6">
+            <div class="foot_title"><i>who</i> <span class="sub">uses netobjex</span></div>
+            <ul class="f_links">
+              <li><a href="#">User Stories</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Use Cases</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="foot_title"><i>how</i> <span class="sub">does it work</span></div>
+            <ul class="f_links">
+              <li><a href="webTour.html">Web Tour</a></li>
+              <li><a href="videoTour.html">Video Tour</a></li>
+              <li><a href="technology.html">Technology</a></li>
+              <li><a href="ioToken.html">IoToken</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="foot_title"><i>which</i> <span class="sub">services we offer</span></div>
+            <ul class="f_links">
+              <li><a href="ai_services.html">Artificial Intelligence</a></li>
+              <li><a href="blockchain_services.html">BlockChain</a></li>
+              <li><a href="iot_services.html">Internet of Things</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="foot_title"><i>about</i> <span class="sub">netobjex</span></div>
+            <ul class="f_links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="developers.html">Developers</a></li>
+              <li><a href="pressReleases.html">Press Releases</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 bdr_top">
+            <span class="copy">copyright @ 2018 netObjex.com All rights reserved.</span>
+            <span class="privacy"><a href="privacy.html">Privacy</a>     |    <a href="terms.html">Terms of Service</a></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
 
 
 <script src="js/jquery.js"></script>
