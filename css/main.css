@@ -720,9 +720,21 @@
 .our__row {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .our__row {
+    flex-wrap: wrap;
+  }
+}
 .our__row-left,
 .our__row-right {
   width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .our__row-left,
+  .our__row-right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 .our__title {
   padding-bottom: 40px;
@@ -739,9 +751,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(618px / 3);
   height: 150px;
+  padding: 15px;
   border: 1px solid #efefef;
+}
+@media screen and (min-width: 320px) {
+  .our__block {
+    width: calc((100% / 1));
+  }
+}
+@media screen and (min-width: 576px) {
+  .our__block {
+    width: calc((100% / 2) - 10px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our__block {
+    width: calc(558px / 3);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .our__block {
+    width: calc(618px / 3);
+  }
 }
 .our__block img {
   display: block;
@@ -755,6 +787,25 @@
   width: 100%;
   max-width: 618px;
 }
+@media screen and (min-width: 320px) {
+  .our__box {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our__box {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: 558px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .our__box {
+    max-width: 618px;
+  }
+}
 .our__box-text {
   color: #536080;
   font-size: 16px;
@@ -764,6 +815,11 @@
   height: 31px;
   background-image: url("../images/i-corner.png");
 }
+@media screen and (max-width: 1199px) {
+  .our__box-icon {
+    display: none;
+  }
+}
 .our__box-btn {
   display: flex;
   align-items: center;
@@ -771,12 +827,20 @@
   width: 192px;
   height: 55px;
   border-radius: 2px;
+  border: 1px solid transparent;
   background-color: #2a50b1;
   text-transform: uppercase;
   color: #fff;
   font-family: "robotobold", sans-serif;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-.our {}
+.our__box-btn:hover {
+  border-color: #2a50b1;
+  background-color: #fff;
+  text-decoration: none;
+  color: #2a50b1;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 /*
   =========================
   end OUR SECTION
