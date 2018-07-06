@@ -695,16 +695,38 @@
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .custom {
+    padding-top: 45px;
+    padding-bottom: 37px;
+  }
+}
 .custom__row {
   display: flex;
+}
+@media screen and (max-width: 991px) {
+  .custom__row {
+    flex-wrap: wrap;
+  }
 }
 .custom__row-left,
 .custom__row-right {
   width: 50%;
 }
+@media screen and (max-width: 991px) {
+  .custom__row-left,
+  .custom__row-right {
+    width: 100%;
+  }
+}
 .custom__row-right {
   padding-left: 60px;
   padding-top: 30px;
+}
+@media screen and (max-width: 991px) {
+  .custom__row-right {
+    padding-left: 0;
+  }
 }
 .custom__title.title {
   overflow: hidden;
@@ -761,11 +783,36 @@
   padding-top: 36px;
   background-image: url("../images/img-bg-box__custom.png");
   background-repeat: no-repeat;
-  background-position-x: -123px;
-  background-size: contain;
+  background-position-x: -200px;
+  background-size: cover;
+}
+@media screen and (max-width: 991px) {
+  .custom__box {
+    padding-bottom: 36px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .custom__box {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .custom__box {
+    padding-left: 43px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .custom__box {
+    padding-left: 123px;
+  }
 }
 .custom__block {
   width: 472px;
+}
+@media screen and (max-width: 575px) {
+  .custom__block {
+    width: 100%;
+  }
 }
 .custom__block-header {
   display: flex;
@@ -784,6 +831,11 @@
   font-size: 15px;
   transition: background-color 0.3s ease-in-out;
 }
+@media screen and (max-width: 575px) {
+  .custom__block-header a {
+    font-size: 13px;
+  }
+}
 .custom__block-header a.is-active {
   background-color: #1b97df;
   transition: background-color 0.3s ease-in-out;
@@ -796,6 +848,11 @@
   padding: 30px;
   background-color: #1b97df;
 }
+@media screen and (max-width: 575px) {
+  .custom__block-body {
+    padding: 15px;
+  }
+}
 .custom__block-title,
 .custom__block-text {
   color: #fff;
@@ -806,9 +863,21 @@
   font-family: "robotobold", sans-serif;
   font-size: 20px;
 }
+@media screen and (max-width: 575px) {
+  .custom__block-title {
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+}
 .custom__block-text {
   padding-bottom: 30px;
   font-size: 16px;
+}
+@media screen and (max-width: 575px) {
+  .custom__block-text {
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
 }
 .custom__block-body ul {
   padding: 0;
