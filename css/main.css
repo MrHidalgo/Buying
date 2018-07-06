@@ -706,6 +706,12 @@
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
+@media screen and (max-width: 767px) {
+  .special {
+    padding-top: 57px;
+    padding-bottom: 51px;
+  }
+}
 .special__bg {
   position: absolute;
   top: 0;
@@ -767,8 +773,25 @@
 .special__row-left {
   width: 490px;
 }
-.special__row-right {
-  width: calc(100% - 537px);
+@media screen and (min-width: 768px) {
+  .special__row-left {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .special__row-left {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .special__row-left {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .special__row-left {
+    width: 490px;
+  }
 }
 .special__subtitle {
   margin-bottom: 30px;
@@ -777,6 +800,11 @@
   font-family: "agendamedium", sans-serif;
   font-size: 24px;
   font-weight: 500;
+}
+@media screen and (min-width: 992px) {
+  .special__subtitle br {
+    display: none;
+  }
 }
 .special__text {
   line-height: 1.6;
@@ -792,6 +820,23 @@
   height: 261px;
   background-color: #1b97df;
 }
+@media screen and (max-width: 991px) {
+  .special__box {
+    z-index: 1;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .special__box {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 261px;
+  }
+}
 .special__box-part {
   display: flex;
   flex-direction: column;
@@ -799,6 +844,14 @@
   justify-content: center;
   width: calc(100% / 3);
   height: 100%;
+  padding: 0 15px;
+}
+@media screen and (max-width: 575px) {
+  .special__box-part {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 .special__box-part p {
   margin: 0;
@@ -811,8 +864,28 @@
   font-size: 72px;
   font-weight: 500;
 }
+@media screen and (max-width: 767px) {
+  .special__box-num {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .special__box-num {
+    font-size: 50px;
+  }
+}
 .special__box-num span {
   font-size: 48px;
+}
+@media screen and (max-width: 767px) {
+  .special__box-num span {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .special__box-num span {
+    font-size: 35px;
+  }
 }
 .special__box-description {
   width: 100%;
@@ -823,6 +896,11 @@
   font-family: "robotomedium", sans-serif;
   font-size: 16px;
   font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .special__box-description {
+    font-size: 14px;
+  }
 }
 .special__box-line {
   overflow: hidden;
