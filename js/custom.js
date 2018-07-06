@@ -378,6 +378,18 @@ $(function () {
       elem.removeClass("is-show");
     }
   });
+
+
+  // TEAMS FILTER
+  $(".teams__btn").on("click", function(e) {
+    e.preventDefault();
+
+    var elem = $(e.currentTarget),
+      elemAttr = elem.attr("data-teams-name");
+
+    $(".teams__btn").removeClass("is-active");
+    elem.addClass("is-active");
+  });
 });
 
 

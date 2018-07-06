@@ -755,6 +755,97 @@
   TEAM SECTION
   =========================
 */
+.teams {
+  padding-top: 113px;
+  padding-bottom: 120px;
+}
+.teams__title {
+  padding-bottom: 69px;
+  text-align: center;
+}
+.teams__btn-wrap {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 53px;
+}
+.teams__btn {
+  display: flex;
+  align-items: center;
+  height: 31px;
+  padding-left: 33px;
+  padding-right: 33px;
+  border-radius: 2em;
+  background-color: #e9e9e9;
+  color: #52555c;
+  font-size: 16px;
+  font-family: "robotomedium", sans-serif;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.teams__btn.is-active {
+  color: #fff;
+  background-color: #53c2d6;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.teams__block-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.teams__block {}
+.teams__block div {
+  overflow: hidden;
+  position: relative;
+  width: 184px;
+  height: 164px;
+  margin-bottom: 15px;
+  border: 1px solid #e4e4e4;
+  background-color: #eeeeee;
+}
+.teams__block div a {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+}
+.teams__block div a:before,
+.teams__block div a:after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 30px solid transparent;
+}
+.teams__block div a:before {
+  border-bottom: 31px solid #1b3a8a;
+}
+.teams__block div a:after {
+  border-right: 31px solid #1b3a8a;
+}
+.teams__block div a i {
+  z-index: 1;
+  position: absolute;
+  right: 8px;
+  bottom: 14px;
+  width: 19px;
+  height: 9px;
+  background-image: url(../images/i-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.teams__block p {
+  margin: 0;
+  font-family: "robotobold", sans-serif;
+}
+.teams__block .teams__block-name {
+  color: #536080;
+  font-size: 16px;
+}
+.teams__block .teams__block-pos {
+  color: #b3b3b3;
+  font-size: 14px;
+}
 .teams {}
 /*
   =========================
@@ -974,5 +1065,46 @@
 /*
   =========================
   end SOCIAL
+  =========================
+*/
+/*
+  =========================
+  TITLE
+  =========================
+*/
+.title {
+  margin: 0;
+  line-height: 1;
+  color: #153587;
+  text-transform: uppercase;
+  font-family: "agendamedium", sans-serif;
+  font-size: 60px;
+}
+.title--underline {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.title--underline:after {
+  z-index: 0;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 15px;
+  background-color: #1ad5f7;
+  transform: translateX(-100%);
+  animation-name: underline;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/*
+  =========================
+  end TITLE
   =========================
 */
