@@ -640,6 +640,12 @@
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .invest {
+    padding-top: 50px;
+    padding-bottom: 66px;
+  }
+}
 .invest__title {
   color: #fff;
 }
@@ -671,10 +677,21 @@
 .invest__row {
   display: flex;
 }
+@media screen and (max-width: 991px) {
+  .invest__row {
+    flex-wrap: wrap;
+  }
+}
 .invest__row-left,
 .invest__row-right {
   position: relative;
   width: 50%;
+}
+@media screen and (max-width: 991px) {
+  .invest__row-left,
+  .invest__row-right {
+    width: 100%;
+  }
 }
 .invest__row-left {
   z-index: 1;
@@ -689,11 +706,21 @@
   padding: 35px 55px;
   background-color: #2a51b1;
 }
+@media screen and (max-width: 575px) {
+  .invest__form-body {
+    padding: 25px 15px;
+  }
+}
 .invest__form-footer {
   display: flex;
   justify-content: center;
   padding: 18px 20px;
   background-color: #153587;
+}
+@media screen and (max-width: 575px) {
+  .invest__form-footer {
+    padding: 15px;
+  }
 }
 .invest__form-btn {
   display: flex;
@@ -721,12 +748,42 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 575px) {
+  .invest__form-group {
+    flex-wrap: wrap;
+  }
+}
 .invest__form-field {
   position: relative;
   height: 60px;
   width: 100%;
   max-width: 266px;
   margin-bottom: 17px;
+}
+@media screen and (max-width: 767px) {
+  .invest__form-field {
+    max-width: 215px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .invest__form-field {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .invest__form-field {
+    max-width: 180px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .invest__form-field {
+    max-width: 230px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .invest__form-field {
+    max-width: 266px;
+  }
 }
 .invest__form-input {
   position: absolute;
@@ -759,20 +816,67 @@
   display: flex;
   max-width: 100%;
 }
+@media screen and (max-width: 575px) {
+  .invest__form-field--eth {
+    flex-wrap: wrap;
+  }
+}
 .invest__form-field--eth span {
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(100% - 266px);
   height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #153587;
   color: #fff;
   font-size: 16px;
+}
+@media screen and (max-width: 575px) {
+  .invest__form-field--eth span {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .invest__form-field--eth span {
+    width: calc(100% - 180px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .invest__form-field--eth span {
+    width: calc(100% - 230px);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .invest__form-field--eth span {
+    width: calc(100% - 266px);
+  }
 }
 .invest__form-field--eth input {
   position: relative;
   width: 266px;
   padding-right: 85px;
+}
+@media screen and (max-width: 575px) {
+  .invest__form-field--eth input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .invest__form-field--eth input {
+    max-width: 180px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .invest__form-field--eth input {
+    max-width: 230px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .invest__form-field--eth input {
+    max-width: 266px;
+  }
 }
 .invest__form-field--eth label {
   cursor: pointer;
@@ -796,14 +900,27 @@
   margin-top: 30px;
   background-color: #183d9e;
 }
-.invest__box-btn {}
+@media screen and (max-width: 991px) {
+  .invest__box {
+    left: 0;
+    width: 100%;
+    padding-left: 45px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .invest__box {
+    padding: 25px 15px;
+  }
+}
 .invest__box-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 54px;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 100%;
+  max-width: 210px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #fff;
   border-radius: 2px;
   background-color: transparent;
@@ -833,6 +950,11 @@
   font-family: "robotobold", sans-serif;
   font-weight: bold;
   font-size: 18px;
+}
+@media screen and (max-width: 575px) {
+  .invest__box-list p {
+    font-size: 16px;
+  }
 }
 .invest__title {}
 /*
