@@ -658,6 +658,7 @@
   =========================
 */
 .market {
+  overflow: hidden;
   padding-top: 112px;
   padding-bottom: 145px;
   background-color: #0f2765;
@@ -667,12 +668,33 @@
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .market {
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}
 .market__row {
   display: flex;
+}
+@media screen and (max-width: 991px) {
+  .market__row {
+    flex-wrap: wrap;
+  }
 }
 .market__row-left {
   width: 500px;
   padding-right: 90px;
+}
+@media screen and (max-width: 991px) {
+  .market__row-left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .market__row-left {
+    padding-right: 0;
+  }
 }
 .market__row-right {
   position: relative;
@@ -681,6 +703,12 @@
   justify-content: flex-end;
   width: calc(100% - 500px);
   padding-top: 30px;
+}
+@media screen and (max-width: 991px) {
+  .market__row-right {
+    justify-content: center;
+    width: 100%;
+  }
 }
 .market__title.title {
   overflow: hidden;
@@ -692,6 +720,11 @@
   text-transform: none;
   font-family: "agendamedium", sans-serif;
   font-weight: 500;
+}
+@media screen and (max-width: 575px) {
+  .market__title.title {
+    margin-bottom: 50px;
+  }
 }
 .market__title i {
   display: block;
@@ -729,6 +762,11 @@
   color: #fff;
   font-size: 16px;
 }
+@media screen and (max-width: 575px) {
+  .market__text {
+    padding-bottom: 30px;
+  }
+}
 .market__btn {
   display: inline-flex;
   align-items: center;
@@ -747,6 +785,12 @@
   font-family: "robotobold", sans-serif;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+@media screen and (max-width: 575px) {
+  .market__btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .market__btn:hover,
 .market__btn:focus {
   text-decoration: none;
@@ -763,6 +807,11 @@
   max-width: 532px;
   max-height: 501px;
 }
+@media screen and (max-width: 767px) {
+  .market__graph-wrap {
+    position: static;
+  }
+}
 .market__graph-wrap:before,
 .market__graph-wrap:after {
   content: "";
@@ -770,6 +819,12 @@
   left: -5px;
   width: 28px;
   height: 28px;
+}
+@media screen and (max-width: 1199px) {
+  .market__graph-wrap:before,
+  .market__graph-wrap:after {
+    display: none;
+  }
 }
 .market__graph-wrap:before {
   top: -5px;
@@ -786,7 +841,21 @@
   left: 0;
   bottom: 0;
 }
-.market__row {}
+@media screen and (max-width: 767px) {
+  .market__graph {
+    position: static;
+  }
+}
+.market__row-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .market__row-right > img {
+    display: none;
+  }
+}
 /*
   =========================
   end MARKET SECTION
