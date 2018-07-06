@@ -390,6 +390,21 @@ $(function () {
     $(".teams__btn").removeClass("is-active");
     elem.addClass("is-active");
   });
+
+
+  // CUSTOM BLOCK
+  $("[custom-btn-js]").on("click", function(e) {
+    e.preventDefault();
+
+    var elem = $(e.currentTarget),
+      elemAttr = elem.attr("data-block");
+
+    $("[custom-btn-js]").removeClass("is-active");
+    elem.addClass("is-active");
+
+    $(".custom__block-body").removeClass("is-active");
+    $(".custom__block-body[data-filter-block='" + elemAttr + "']").addClass("is-active");
+  });
 });
 
 
