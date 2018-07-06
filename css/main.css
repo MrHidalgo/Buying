@@ -717,6 +717,12 @@
   padding-top: 110px;
   padding-bottom: 120px;
 }
+@media screen and (max-width: 767px) {
+  .our {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+}
 .our__row {
   display: flex;
 }
@@ -736,8 +742,9 @@
     margin-bottom: 30px;
   }
 }
-.our__title {
+.our__title.title {
   padding-bottom: 40px;
+  font-size: 48px;
 }
 .our__block-wrap {
   display: flex;
@@ -1504,9 +1511,10 @@
     padding-bottom: 60px;
   }
 }
-.teams__title {
+.teams__title.title {
   padding-bottom: 69px;
   text-align: center;
+  font-size: 48px;
 }
 @media screen and (max-width: 767px) {
   .teams__title {
