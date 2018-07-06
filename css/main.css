@@ -807,12 +807,31 @@
   }
 }
 .custom__block {
+  position: relative;
   width: 472px;
 }
 @media screen and (max-width: 575px) {
   .custom__block {
     width: 100%;
   }
+}
+.custom__block:before,
+.custom__block:after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  width: 28px;
+  height: 28px;
+}
+.custom__block:before {
+  top: 39px;
+  background-image: url("../images/corner-top-right.png");
+  background-repeat: no-repeat;
+}
+.custom__block:after {
+  bottom: -5px;
+  background-image: url("../images/corner-bottom-right.png");
+  background-repeat: no-repeat;
 }
 .custom__block-header {
   display: flex;
