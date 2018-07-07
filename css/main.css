@@ -2943,9 +2943,36 @@
   -o-background-size: cover;
   background-size: cover;
 }
+.details__container {
+  position: relative;
+  left: 50%;
+  width: 1340px;
+  height: 100%;
+  transform: scale(1) translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .details__container {
+    transform: scale(0.6) translateX(-85%);
+  }
+}
+@media screen and (min-width: 992px) {
+  .details__container {
+    transform: scale(0.8) translateX(-64.1%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details__container {
+    transform: scale(0.9) translateX(-57%);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .details__container {
+    transform: scale(1) translateX(-50%);
+  }
+}
 .details__line {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 13px);
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
