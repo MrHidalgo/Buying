@@ -287,6 +287,13 @@
 
 }
 
+@media screen and ( min-width: 768px )  and ( max-width: 1100px ) {
+  .custom-navbar .navbar-right
+  {
+    display: none !important;
+  }
+}
+
 @media screen and ( min-width: 1001px )  and ( max-width: 1365px ) {
   #banner_vid
   {
@@ -335,6 +342,9 @@
     padding-right: 0px;
     width: 100%;
   }
+}
+
+@media screen and ( min-width: 768px )  and ( max-width: 1366px ) {
   .custom-navbar .nav > li {
     width: auto;
     /*max-width: 135px;*/
@@ -344,8 +354,6 @@
     display: block;
     padding: 10px 10px !important;
   }
-  
-
 }
 
 

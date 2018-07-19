@@ -444,6 +444,12 @@ $(function () {
     $(".custom__block-body").removeClass("is-active");
     $(".custom__block-body[data-filter-block='" + elemAttr + "']").addClass("is-active");
   });
+
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': false,
+    'alwaysShowNavOnTouchDevices': true
+  })
 });
 
 $(function() {
@@ -506,6 +512,8 @@ function initializeClock(id, endtime) {
 
 //var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 var deadline = new Date(2018, 09, 07, 12, 00);
-initializeClock('clockdiv', deadline);
+if($("#clockdiv").length > 0) {
+  initializeClock('clockdiv', deadline);
+}
 
 // Countdown timer End here
