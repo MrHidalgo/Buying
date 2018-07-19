@@ -69,6 +69,20 @@
   {
     margin: 10px 14px;
   }
+  .teampop .modal-body
+  {
+    display: block;
+  }
+  .m_left
+  {
+    width: 100%;
+    max-width: 100%;
+  }
+  .m_right
+  {
+    width: 100%;
+    min-height: 50px;
+  }
 }
 @media ( max-width: 767px) {
   .custom-navbar.top-nav-collapse {
@@ -83,11 +97,16 @@
   h1.site_title {
     font-size: 42px;
   }
-
+  .navbar-nav.navbar-right li:last-child::after, 
+  .btn_lang::after
+  {
+    left: 55px;
+    right: auto;  
+  }
   .navbar-collapse {
     padding: 0px;
     background: #111;
-    margin-top: 12px;
+    margin-top: 2px;
     z-index: 9999;
     position: relative;
   }
@@ -342,3 +361,6 @@
     right: -20px;
   }
 }
+
+
+

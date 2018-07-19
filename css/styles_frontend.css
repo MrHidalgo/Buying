@@ -337,6 +337,11 @@ footer span {
 }
 .social-icon li a:hover {
   color: #c14000;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .navbar-brand {
   display: block;
@@ -368,7 +373,7 @@ footer span {
 }
 .custom-navbar .nav li.active > a {
   background: none !important;
-  color: #28aa05;
+  /*color: #28aa05;*/
   outline: none;
 }
 .navbar-right {
@@ -451,11 +456,12 @@ body {
   border: 1px solid #2ba6d4; border-radius: 3px; background: #175299;
   padding: 13px 26px 13px 10px; text-transform: uppercase;
   margin: 0px 4px; position: relative;
-  /*-webkit-appearance: none;
+  -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
-    appearance: none;*/
+    appearance: none;
 }
+.navbar-nav.navbar-right li:last-child::after,
 .btn_lang::after
 {
   content: '';
@@ -465,7 +471,7 @@ body {
   position: absolute;
   top: 54%;  right: 5px;
   width:12px; height: 10px;
-  z-index: 3
+  z-index: 3;
 }
 
 
@@ -531,6 +537,7 @@ body {
 #home {
   height: 800px;
   background: #153587;
+  margin-top: 85px;
 }
 .square_box
 {
@@ -583,7 +590,7 @@ body {
   position: absolute;
   top: 460px;
   right: 47%;
-  z-index: 4;
+  z-index: 50;
 }
 .banner_email
 {
@@ -1398,3 +1405,168 @@ ul.tick_list li {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
 }
 /* end HAMBURGER */
+
+.title--underline:after
+{
+  opacity: 0.9;
+}
+
+.scale-anm {
+  transform: scale(1);
+}
+.teams__block div > img
+{
+  width: 100%;
+}
+
+.teampop .modal-body
+{
+  padding: 0; position: relative;
+  display: flex;
+}
+.m_left
+{
+  width: 40%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  max-width: 230px;
+  flex: 1;
+}
+.m_left > img
+{
+  border:1px solid #dedede;
+}
+.m_right
+{
+  width: 60%;
+  display: inline-block;
+  padding-top: 15px;  
+  min-height: 250px;
+  border-radius: 0 6px 6px 0;
+  background: #f0f0f0;
+  position:relative;
+  flex: 1;
+}
+.m_right p
+{
+  padding: 15px;
+}
+.m_left .mem_name
+{
+    font-family: "robotobold", sans-serif;
+    color: #536080;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 0;
+}
+.m_left .mem_pos
+{
+    color: #888888;
+    font-size: 16px;
+    text-align: center;
+}
+.teampop .modal-body button.close
+{
+  position: absolute; top: 10px; right: 10px;
+  float: none;
+  z-index: 9;
+}
+.modal-backdrop
+{
+  background: #1b3a8a;
+}
+.custom__block-header a.is-active
+{
+  color: #fff;
+}
+.custom__block-header a.is-active:focus
+{
+  color: #fff;
+}
+a:focus
+{
+  outline: none;
+}
+ul.special_bullet
+{
+  padding: 0px;
+}
+.special_bullet li
+{
+  background: url(../images/bullet_dot.png) no-repeat 0px 4px;
+  list-style:none;
+  padding-left: 18px;
+  color: #536080;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 8px;
+}
+
+#team_members
+{
+  text-align: center;
+}
+.teams__block {
+    float: none !important;
+    padding: 0px 0px 20px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .teams__block
+  {
+    margin-left: 0px!important;
+    margin-bottom: 0px!important;
+    width: 100%;
+    text-align: center;
+  }
+  .teams__block div
+  {
+    margin: 0 auto;
+  }
+}
+
+/*
+.executives_wrap, 
+.scrollable_bk
+{
+  margin-left: 25px; 
+  margin-right: 25px;
+}
+#team_members .slick-prev, 
+#team_members .slick-next
+{
+  Xopacity: 1;
+  top: 40%;
+  z-index: 9999;
+}
+
+#team_members .slick-prev:before, 
+#team_members .slick-next:before 
+{
+  content: '';
+  width: 24px;
+  height: 25px;
+  display: inline-block;
+}
+#team_members .slick-prev:before 
+{
+  background: url(../images/prev_arrow.jpg) no-repeat;
+}
+#team_members .slick-next:before 
+{
+    background: url(../images/next_arrow.jpg) no-repeat;
+}
+#team_members .slick-dots li button::before,
+#team_members .slick-dots li button::after
+{
+  font-size: 12px;
+}
+#team_members .slick-dots li.slick-active button:before
+{
+  color: #153587;
+}
+*/

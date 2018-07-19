@@ -10,24 +10,24 @@ $(window).load(function () {
 // Isotope filter
 jQuery(document).ready(function ($) {
 
-  $(".problems_scroller .boxes").slick({
+  $(".XXscrollable_bk").slick({
     dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    infinite: false,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     responsive: [
       {
         breakpoint: 1366,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 5,
+          slidesToScroll: 5
         }
       },
       {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 4,
+          slidesToScroll: 4
         }
       }],
   });
@@ -225,7 +225,7 @@ $(function () {
     //$('#home').parallax("100%", 0.1);
     $('#feature').parallax("100%", 0.3);
     $('#service').parallax("100%", 0.1);
-    $('#about').parallax("100%", 0.3);
+    //$('#about').parallax("100%", 0.3);
     $('#team').parallax("100%", 0.1);
     $('#testimonial').parallax("100%", 0.2);
     $('#portfolio').parallax("100%", 0.3);
@@ -445,6 +445,23 @@ $(function () {
     $(".custom__block-body[data-filter-block='" + elemAttr + "']").addClass("is-active");
   });
 });
+
+$(function() {
+    var selectedClass = "";
+    $(".fil-cat").click(function(){ 
+    selectedClass = $(this).attr("data-teams-name"); 
+     $("#team_members").fadeTo(100, 0.1);
+     $("#team_members .teams__block").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#team_members").fadeTo(300, 1);
+    }, 300);
+    
+  });
+
+  $('.teams__btn-wrap .is-active').click();  
+});
+
 
 
 // Countdown Timer Start Here
